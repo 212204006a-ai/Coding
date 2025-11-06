@@ -1,0 +1,12 @@
+import java.util.Random;
+
+public class FruitPicker {
+    public static void main(String[] args) {
+        String[] fruits = {"Apple", "Banana", "Cherry", "Date", "Elderberry"};
+        Random random = new Random();
+        int randomNumber = random.nextInt(5) + 1; // 1 to 5
+        String pickedFruit = fruits[randomNumber - 1];
+        System.out.println("Random number: " + randomNumber);
+        System.out.println("Picked fruit: " + pickedFruit);
+    }
+}
